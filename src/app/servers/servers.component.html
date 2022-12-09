@@ -1,11 +1,19 @@
-<div class="d-flex w-100 mb-2">
-  <button class="btn btn-primary ms-auto"
-          [disabled]="!allowNewServer"
-          (click)="onCreateServer()"
-  >Add Server</button>
+<div class="">
+  <input
+    type="text"
+    class="form-control mb-2"
+    [(ngModel)]="serverName">
+
+  <p>
+    <button class="btn btn-primary"
+            [disabled]="!allowNewServer"
+            (click)="onCreateServer()">
+      Add Server
+    </button>
+  </p>
 </div>
 
-<p>
+<p class="text-light">
   {{ serverCreationStatus }}
 </p>
 
