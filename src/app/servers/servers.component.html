@@ -1,4 +1,13 @@
-<app-server></app-server>
-<app-server></app-server>
+<div class="d-flex w-100 mb-2">
+  <button class="btn btn-primary ms-auto"
+          [disabled]="!allowNewServer"
+          (click)="onCreateServer()"
+  >Add Server</button>
+</div>
+
+<p>
+  {{ serverCreationStatus }}
+</p>
+
 <app-server></app-server>
 <app-server></app-server>
