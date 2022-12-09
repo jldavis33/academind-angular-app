@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Default variable overrides
+$body-bg: #b497cc;
+$body-color: #3d274d;
+
+// Theme Colors
+$primary: #603F8B !default;
+$secondary: #A16AE8 !default;
+$success: #B4FEE7 !default;
+$danger: #FD49A0 !default;
+$warning: #FFA384 !default;
+
+// Bootstrap Import
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
